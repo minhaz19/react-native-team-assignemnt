@@ -1,0 +1,19 @@
+.login-container {
+  border: 1px solid gray;
+  width: 500px;
+  height: 200px;
+  margin-top: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.buttonss {
+  margin-top: 50px;
+  text-align: center !important;
+}
+.buttonss button {
+  padding: 10px 30px;
+  background-color: white;
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
