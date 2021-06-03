@@ -1,0 +1,45 @@
+.grapich-designer {
+  background-image: linear-gradient(135deg, #ff3a004a, #000000e8),
+    url("../../images/grapich-designer.jpeg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+.web-devloper {
+  background-image: linear-gradient(135deg, #000000ed, #14363acc),
+    url("../../images/web-developer.jpeg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+.photoShop {
+  background-image: linear-gradient(135deg, #313016a8, #010404cc),
+    url("../../images/photo-shop-7.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  /* background-color: #111; */
+}
+.degitial-marketing {
+  background-image: linear-gradient(135deg, #3a3813a8, #030a0acc, #4a0c0c),
+    url("../../images/degitial-marketing-2.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+.corse-detls {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}

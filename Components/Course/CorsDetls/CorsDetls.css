@@ -1,0 +1,35 @@
+.corse-detls {
+  padding-top: 3%;
+}
+.corse-detls h6 {
+  color: #de8686;
+  font-size: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+.discount {
+  font-size: 30px;
+  color: gray;
+}
+.price {
+  font-size: 35px;
+  color: goldenrod;
+  padding-right: 25px;
+}
+.buy-now-btn {
+  text-align: center;
+}
+.buy-now-btn button {
+  padding: 15px 35px;
+  background-color: #f64747a3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+.buy-now-btn button:hover {
+  background-color: #f75555;
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "course": "Grific Desigenar",
+        "imgUrl": "https://lh3.googleusercontent.com/proxy/CH9dwz38ST9Iz2RPx5xRLXEShMwHTiQlnc--lXHG7bLNVnBKmKai0aFLfneuk5rbOOWFmA-h_1rTfx6DzTOWtNk_B4xLLYkLqTabHqs",
+        "price": 199,
+"diccount":10
+    },
+    {
+        "course": "Web Designer",
+        "imgUrl": "https://lh3.googleusercontent.com/proxy/CH9dwz38ST9Iz2RPx5xRLXEShMwHTiQlnc--lXHG7bLNVnBKmKai0aFLfneuk5rbOOWFmA-h_1rTfx6DzTOWtNk_B4xLLYkLqTabHqs",
+        "price": 300,
+"diccount":10
+    },
+    {
+        "course": "Photo shop",
+        "imgUrl": "https://www.uttaramotorsltd.com/wp-content/uploads/2015/12/LT-Bus.png", 
+        "price":  100,
+"diccount":10
+    },
+    {
+        "course": "Degitial Marckting",       
+        "imgUrl": "https://edgedsign.com/wp-content/uploads/2020/04/Siemens-Velaro-3D-model-1024x531.jpg",
+        "price":  85,
+      "diccount":10
+    }
+]
