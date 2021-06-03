@@ -1,10 +1,13 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "./CorsDetls.css";
 export default function CorsDetls({ course }) {
-  const handelAddProduct = (pd) => {
-    console.log(pd);
+
+  let history = useHistory();
+  const handelAddProduct = (id) => {
+    const url = `/book/${id}`;
+    history.push(url);
   };
   return (
     <View>
@@ -17,8 +20,8 @@ export default function CorsDetls({ course }) {
           <sub style={{ color: "darkgray", padding: "0px 5px" }}>discount</sub>
         </p>
         <div className="buy-now-btn">
-          <Link to="/book">
-            <button onClick={() => handelAddProduct(course)}>
+          <Link to={`/book/${course.id}`}>
+            <button onClick={() => handelAddProduct(course.id)}>
               buy this course
             </button>
           </Link>

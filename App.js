@@ -20,15 +20,12 @@ export default function App() {
       <UserContext.Provider value={[loginUser, setLoginUser]}>
         <Router>
           <Switch>
-            <Route path="/home">
-              <Home></Home>
-            </Route>
+            <PrivateRoute path="/book/:id">
+              <Book></Book>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
-            <PrivateRoute path="/book">
-              <Book></Book>
-            </PrivateRoute>
             <Route exact path="/">
               <Home></Home>
             </Route>

@@ -10,6 +10,7 @@ import "./Course.css";
 //////////////
 const grapichDesigner = [
   {
+    id:1,
     course: "grapich designer",
     img: grapichDesignerImg,
     price: 150,
@@ -18,6 +19,7 @@ const grapichDesigner = [
 ];
 const webDevloper = [
   {
+    id:2,
     course: "Web devloper",
     img: webDevloperimg,
     price: 250,
@@ -26,6 +28,7 @@ const webDevloper = [
 ];
 const photoShop = [
   {
+    id:3,
     course: "Photo Shop",
     img: photoshopImg,
     price: 185,
@@ -34,6 +37,7 @@ const photoShop = [
 ];
 const degitalMarketing = [
   {
+    id:4,
     course: "Degital Marketing",
     img: degitalMarketingImg,
     price: 120,
@@ -43,7 +47,6 @@ const degitalMarketing = [
 /////////////
 export default function Course() {
   const [data, setData] = useState(datas);
-  console.log(data);
 
   return (
     <View>
