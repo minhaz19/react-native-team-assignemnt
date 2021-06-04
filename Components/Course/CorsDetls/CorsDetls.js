@@ -3,10 +3,11 @@ import { StyleSheet, Text, View } from "react-native";
 import { Link, useHistory } from "react-router-dom";
 import "./CorsDetls.css";
 export default function CorsDetls({ course }) {
-
   let history = useHistory();
   const handelAddProduct = (id) => {
+    console.log(id);
     const url = `/book/${id}`;
+
     history.push(url);
   };
   return (
