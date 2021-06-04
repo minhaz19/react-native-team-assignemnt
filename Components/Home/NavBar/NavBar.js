@@ -87,7 +87,7 @@ const NavBar = () => {
   return (
     <div>
       <SideNav
-        // style={{ backgroundColor: "#313131", color: "white" }}
+        style={{ backgroundColor: "#f64747ba", color: "white" }}
         onSelect={(selected) => {
           // Add your code here
         }}
