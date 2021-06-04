@@ -71,21 +71,16 @@ export default function Book() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>Name</Text>
+      <Text style={styles.label}>Name:</Text>
       <View >
         <TextInput style={styles.input} value={loggedInUser.loginUserName} placeholder="Your Address"/>
       </View>
-      <Text style={styles.label}>Email</Text>
+      <Text style={styles.label}>Email:</Text>
       <View >
         <TextInput style={styles.input} value={loggedInUser.loginUserEmail} placeholder="Your Address"/>
       </View>
-      <Text style={styles.label}>Name</Text>
-      <View >
-        <TextInput style={styles.input} placeholder="Your Address"/>
-      </View>
-
       <View>
-        <Text style={{ fontSize: 20, marginBottom: 10 }}>Total payable taka after discount: ${afterDiscount}</Text>
+        <Text style={{ fontSize: 20, margin: 10 }}>Total payable taka after discount: ${afterDiscount}</Text>
       </View>
       <View>
         <Elements stripe={stripePromise}>
@@ -108,7 +103,7 @@ export default function Book() {
 const styles = StyleSheet.create({
   label: {
     color: 'black',
-    margin: 20,
+    margin: 10,
     fontSize: 20,
     marginLeft: 0,
   },
