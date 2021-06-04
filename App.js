@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React, { createContext, useState } from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
 import img from "./assets/adaptive-icon.png";
 import Home from "./Components/Home/Home/Home";
 import Login from "./Components/Login/Login/Login";
@@ -16,7 +16,7 @@ export const UserContext = createContext();
 export default function App() {
   const [loginUser, setLoginUser] = useState({});
   return (
-    <View>
+    <ScrollView>
       <UserContext.Provider value={[loginUser, setLoginUser]}>
         <Router>
           <Switch>
@@ -32,7 +32,7 @@ export default function App() {
           </Switch>
         </Router>
       </UserContext.Provider>
-    </View>
+    </ScrollView>
   );
 }
 
