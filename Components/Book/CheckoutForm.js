@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Button } from "react-native";
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
-const CheckoutForm = ({handlePayment}) => {
+const CheckoutForm = ({ afterDiscount, handlePayment }) => {
     const stripe = useStripe();
     const elements = useElements();
 
@@ -20,7 +20,7 @@ const CheckoutForm = ({handlePayment}) => {
         });
         if (error) {
             setPaymentError(error);
-            setPaymentSuccess(null);  
+            setPaymentSuccess(null);
         } else {
             setPaymentSuccess(paymentMethod.id);
             setPaymentError(null);
@@ -29,23 +29,32 @@ const CheckoutForm = ({handlePayment}) => {
     };
     return (
         <View>
-        <form onSubmit={handleSubmit}>
-            <CardElement />
-            <br/>
-            <text>Your event charged will be </text>
-            <button type="submit" disabled={!stripe}>
-                Pay
-            </button>
-        </form>
-        {
-            paymentError && <text>{paymentError.message}</text>
-        }
-        {
-            paymentSuccess && <text>Payment successful</text>
-        }
-    </View>
+            <form onSubmit={handleSubmit}>
+                <CardElement />
+                <br />
+                {/* <Button type="submit" style={styles.buttonInner}
+                    color
+                    title="Button" disabled={!stripe}>
+                    Pay
+                </Button> */}
+            </form>
+            {
+                paymentError && <text>{paymentError.message}</text>
+            }
+            {
+                paymentSuccess && <text>Payment successful</text>
+            }
+        </View>
     );
 };
 export default CheckoutForm;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    // button: {
+    //     marginTop: 40,
+    //     color: 'white',
+    //     height: 40,
+    //     backgroundColor: '#ec5990',
+    //     borderRadius: 4,
+    //   },
+});
