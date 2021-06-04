@@ -91,54 +91,54 @@ export default function Book() {
 
   return (
     <View>
-      <NavBar></NavBar>
+      {/* <NavBar></NavBar>
 
-      <div style={{ paddingLeft: "100px" }}>
-        <View style={styles.container}></View>
-        <Text style={styles.label}>Name</Text>
-        <View>
-          <TextInput
-            style={styles.input}
-            value={loggedInUser.loginUserName}
-            placeholder="Your Address"
-          />
-        </View>
-        <Text style={styles.label}>Email</Text>
-        <View>
-          <TextInput
-            style={styles.input}
-            value={loggedInUser.loginUserEmail}
-            placeholder="Your Address"
-          />
-        </View>
-        <Text style={styles.label}>Name</Text>
-        <View>
-          <TextInput style={styles.input} placeholder="Your Address" />
-        </View>
+      <div style={{ paddingLeft: "100px" }}> */}
+      <View style={styles.container}></View>
+      <Text style={styles.label}>Name</Text>
+      <View>
+        <TextInput
+          style={styles.input}
+          value={loggedInUser.loginUserName}
+          placeholder="Your Address"
+        />
+      </View>
+      <Text style={styles.label}>Email</Text>
+      <View>
+        <TextInput
+          style={styles.input}
+          value={loggedInUser.loginUserEmail}
+          placeholder="Your Address"
+        />
+      </View>
+      <Text style={styles.label}>Name</Text>
+      <View>
+        <TextInput style={styles.input} placeholder="Your Address" />
+      </View>
 
-        <View>
-          <Text style={{ fontSize: 20, marginBottom: 10 }}>
-            Total payable taka after discount: ${afterDiscount}
-          </Text>
-        </View>
-        <View>
-          <Elements stripe={stripePromise}>
-            <CheckoutForm afterDiscount={afterDiscount}></CheckoutForm>
-          </Elements>
-        </View>
-        <View style={styles.button}>
-          <Button
-            style={styles.buttonInner}
-            color
-            title="Purchase"
-            onPress={openModal}
-          />
-        </View>
-        <PurchaseModal
-          modalIsOpen={modalIsOpen}
-          closeModal={closeModal}
-        ></PurchaseModal>
-      </div>
+      <View>
+        <Text style={{ fontSize: 20, marginBottom: 10 }}>
+          Total payable taka after discount: ${afterDiscount}
+        </Text>
+      </View>
+      <View>
+        <Elements stripe={stripePromise}>
+          <CheckoutForm afterDiscount={afterDiscount}></CheckoutForm>
+        </Elements>
+      </View>
+      <View style={styles.button}>
+        <Button
+          style={styles.buttonInner}
+          color
+          title="Purchase"
+          onPress={openModal}
+        />
+      </View>
+      <PurchaseModal
+        modalIsOpen={modalIsOpen}
+        closeModal={closeModal}
+      ></PurchaseModal>
+      {/* </div> */}
     </View>
   );
 }
